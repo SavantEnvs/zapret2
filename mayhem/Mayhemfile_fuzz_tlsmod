@@ -1,0 +1,9 @@
+project: savantenvs/zapret2
+target: fuzz_tlsmod
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tlsmod/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tlsmod
+    libfuzzer: true
+    timeout: 10

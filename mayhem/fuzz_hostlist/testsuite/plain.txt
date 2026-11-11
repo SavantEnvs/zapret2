@@ -1,0 +1,6 @@
+example.com
+www.example.org
+# comment
+sub.domain.example.net
+
+^bad.example

@@ -1,0 +1,9 @@
+project: savantenvs/zapret2
+target: fuzz_packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_packet/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_packet
+    libfuzzer: true
+    timeout: 10
